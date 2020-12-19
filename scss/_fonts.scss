@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Vazir';
+  src: url('../fonts/Vazir.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Vazir.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Vazir.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Vazir.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Vazir.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Vazir.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Vazir-Thin';
+  src: url('../fonts/Vazir-Thin.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Vazir-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/Vazir-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/Vazir-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/Vazir-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/Vazir-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'segoesc';
+  src: url('../fonts/segoesc.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/segoesc.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/segoesc.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/segoesc.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/segoesc.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/segoesc.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+$font-family-vazir:'Vazir';
+$font-family-logo:'segoesc';
+$font-family-Vazir-Thin: 'Vazir-Thin';

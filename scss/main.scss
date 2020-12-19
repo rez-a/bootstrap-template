@@ -1,0 +1,327 @@
+@import "fonts";
+@import "variables";
+@import "utilities";
+//**********************           home page            **********************
+//header
+#header-home{
+  position: relative;
+ overflow: hidden;
+  padding-bottom: 9.5rem;
+  #nav-main{
+    .account{
+      .sign-up , .sign-in{
+        border: 1px solid $green-1 !important;
+      }
+    }
+  }
+  #shocase{
+    h2{line-height: 1.8}
+  }
+}
+#header-home::before{
+  position: absolute;
+  content: '';
+  width: 60%;
+  height: 600px;
+  background: $primary !important;
+  left: -25%;
+  top: -25%;
+  transform: rotate(30deg);
+  border-radius: 100px;
+}
+//main
+#main-home{
+  #presentation-services{
+    article{
+      &:nth-child(2){
+        border-radius: 300px 60px 60px 60px ;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+        filter: grayscale(100%);
+      }
+      &:hover{
+        img{
+          filter: grayscale(0);
+          animation: headShake  infinite;
+          animation-duration: 3s;
+        }
+      }
+    }
+  }
+  #complete-solutions{
+    article{
+      div{
+        .icon{
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
+  #customers{
+    background: url("../image/bg-customers.png")no-repeat center center / cover;
+    .user:nth-child(2) .img:last-child , .user:last-child .img:last-child , .user:nth-child(5) .img , .user:nth-child(3) .img{
+      margin-top: 7rem;
+    }
+    .user:nth-child(2) .img:first-child , .user:nth-child(5) .img:last-child{
+      animation: shakeX  infinite;
+      animation-duration: 20s;
+    }
+    animation-direction: alternate-reverse;
+    .user:nth-child(2) .img:last-child , .user:nth-child(5) .img:first-child{
+      animation: shakeY infinite;
+      animation-duration: 20s;
+      animation-delay: 1s;
+      animation-direction: alternate-reverse;
+    }
+    .user:nth-child(3) .img:first-child , .user:nth-child(6) .img:last-child{
+      animation: shakeX infinite;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-direction: alternate-reverse;
+    }
+    .user:nth-child(3) .img:last-child , .user:nth-child(6) .img:first-child{
+      animation: shakeY infinite;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-direction: alternate-reverse;
+    }
+    .carousel img{
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+//**********************           about us            **********************
+//main
+#main-about-us{
+  #your-need{
+    #accordion{
+      .card-header{
+        border:none;
+        a:hover{
+          color:$primary !important;
+        }
+        a[aria-expanded="true"]{
+          color: $primary !important;
+          .arrow{
+            transform: rotate(180deg);
+            i{
+              background: $primary !important;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    article{
+      &:nth-child(2) , &:nth-child(4){
+        margin-top: 4rem !important;
+      }
+      .img{
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  #our-team{
+    .img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+//**********************           services            **********************
+//main
+#main-services{
+  #creative-project{
+    article{
+      border-radius: 25px;
+      .img{
+        width: 250px;
+        height: 200px;
+      }
+    }
+  }
+  #price{
+    .card{
+      border: none !important;
+      .card-footer{
+        background: transparent !important;
+        border: none !important;
+      }
+    }
+    .img{
+      width: 150px;
+      height: 100px;
+    }
+  }
+  #levels-work{
+    .card{
+      border: none !important;
+      .img{
+        position: relative;
+        &::before{
+          position: absolute;
+          width: 30px;
+          height: 25px;
+          background: white;
+          bottom: -5%;
+          right: -5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          border-radius: 5px;
+          box-shadow: 0 .5rem 1rem rgba(1,164,121,.15) !important;
+          animation: rotateIn 1s  infinite;
+          animation-direction: alternate-reverse;
+        }
+
+        img{
+          width: 200px;
+          height: 150px;
+        }
+      }
+    }
+    .level-one{
+      .img{
+        &::before{
+          content: '1';
+        }
+      }
+    }
+    .level-two{
+      .img{
+        &::before{
+          content: '2';
+        }
+      }
+    }
+    .level-three{
+      .img{
+        &::before{
+          content: '3';
+        }
+      }
+    }
+  }
+  #customers{
+    .img{
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+//**********************           blog            **********************
+//main
+#main-blog{
+
+  .input-group:focus-within , .form-group:focus-within{
+    border-color: $primary !important;
+  }
+  .page-item:focus-within .page-link{
+    box-shadow: none !important;
+  }
+  .page-item.active .page-link{
+    background: $primary !important;
+    color: white !important;
+    border-color: $primary !important;
+    &:hover{
+      background: $primary !important;
+      color: white !important;
+    }
+  }
+  .page-item:hover .page-link{
+    background: $green-4 !important;
+    color: black !important;
+  }
+  }
+//**********************           article            **********************
+//main
+#main-article{
+  #article{
+    a.tag:hover{
+      color: $primary !important;
+    }
+    #aside{
+      position: sticky !important;
+      top: 1rem;
+      .input-group-prepend{
+        button{
+          border-radius: 5px !important;
+        }
+      }
+      .card{
+        a:hover{
+          color: $primary !important;
+        }
+        .img{
+          width: 100px;
+          height: 100px;
+        }
+      }
+      .categorized{
+        .list-group{
+          border: none !important;
+          a:hover{
+            background: transparent !important;
+          }
+        }
+      }
+    }
+  }
+}
+//**********************           login            **********************
+//main
+#main-login{
+  #login{
+    form{
+      div>a{
+        text-decoration: underline !important;
+      }
+    }
+    a{
+      &:hover{
+        text-decoration: none !important;
+        color: $primary !important;
+      }
+    }
+  }
+}
+//**********************           sign up           **********************
+//main
+#main-sign-up{
+  #sign-up{
+    a:hover{
+      color: $primary !important;
+    }
+  }
+}
+//**********************           forgot password           **********************
+//main
+#main-forgot-password{
+  #forgot-password{
+    a:hover{
+      color: $primary !important;
+    }
+  }
+}
+//**********************           maintenance           **********************
+//main
+#main-maintenance{
+  #maintenance{
+    background: $dark  url("../image/bg-colorful.png")no-repeat center center / cover;
+    height: 100vh;
+    .container , .row{
+      height: inherit;
+      h1{
+        line-height: 1.7;
+      }
+    }
+  }
+}
+
+@import "media";

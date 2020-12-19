@@ -1,0 +1,42 @@
+@media (max-width: 768px) {
+  #header{
+    height: auto !important;
+    &::before{
+      left: -30% !important;
+    }
+    nav{
+      .container{
+        #navbarnav{
+          background: white;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px){
+  #customers{
+    .user:nth-child(2) .img:last-child , .user:last-child .img:last-child , .user:nth-child(5) .img , .user:nth-child(3) .img{
+      margin-top: 3rem;
+    }
+    .img{
+        width: 60px;
+        height: 60px;
+    }
+  }
+  #your-need{
+    article{
+      &:nth-child(2) , &:nth-child(4){
+        margin-top: 1rem !important;
+      }
+    }
+  }
+}
+@media (max-width: 1200px){
+  #our-team{
+    .card .social{
+      a{
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
